@@ -1,0 +1,29 @@
+# Thank you for downloading the Save Manager plugin! This plugin was designed by me (Mwester) for my own server, but I
+# Hope you will find it useful as well. It is very simple, and has the option to simply run the "save-all" command at
+# set intervals, but it can also save zipped backups of your worlds to prevent major grief or hacking events!
+
+# If you like the plugin be sure to leave a review on spigot so others can see it too!!
+
+
+# Time interval in seconds between auto saves and backups
+# ( 300 seconds = 5 minutes, 3600 seconds = 1 hour, 86400 seconds = 24 hours, 604800 seconds = 1 week)
+save_interval: 3600
+backup_interval: 86400
+
+#Set to true or false if you want to enable world backups and broadcast server messages to the chat for players to see.
+enable_backups: true
+enable_broadcast: true
+
+broadcast_messages:
+  preparing: "&7[&aSaveManager&7] &fPreparing to save world progress..."
+  saving: "&7[&aSaveManager&7] &fWorld progress has been saved!"
+  backing_up: "&7[&aSaveManager&7] &fCreating world backup..."
+  backup_complete: "&7[&aSaveManager&7] &fWorld backup complete!"
+
+# WARNING: If you do not know what to put for the directories, do not touch it! It will automatically create a file called
+# "backups" in your server folder, where all backups may be placed. The time to create the backups varies on world sizes,
+# but should take anywhere from 5-20 minutes.
+backup_directories:
+  overworld: "backups/overworld"
+  nether: "backups/nether"
+  end: "backups/end"

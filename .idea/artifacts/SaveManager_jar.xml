@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SaveManager:jar">
+    <output-path>$USER_HOME$/OneDrive/Desktop/Custom Minecraft Plugins</output-path>
+    <root id="archive" name="SaveManager.jar">
+      <element id="module-output" name="SaveManager" />
+    </root>
+  </artifact>
+</component>

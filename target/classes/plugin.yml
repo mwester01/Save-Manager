@@ -1,0 +1,19 @@
+name: SaveManager
+version: '1.0.1'
+main: com.mwester.savemanager.SaveManager
+api-version: '1.21'
+load: STARTUP
+authors: [Mwester]
+description: Easily manage auto-saves and world backups!
+
+commands:
+  backup:
+    description: Manually start a backup for a specific world.
+    usage: /<command> <world_name>
+    permission: savemanager.backup
+    permission-message: You don't have permission to use this command.
+
+permissions:
+  savemanager.backup:
+    description: Allows execution of the /backup command.
+    default: op
